@@ -32,8 +32,8 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <!--<nav class="navbar navbar-inverse navbar-fixed-top">--> <!--REMOVED NAVIGATION TO REMOVE NAV SECTIONING OF PAGE-->
+        <div class="container"> 
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -68,7 +68,7 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
+    <!--</nav>-->
 
     <!-- Header Carousel -->
     <header id="myCarousel" class="carousel slide">
@@ -84,7 +84,7 @@
             <div class="item active">
                 <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 1</h2>
+                    <h2>Caption 1</h2> 
                 </div>
             </div>
             <div class="item">
@@ -116,9 +116,9 @@
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">
-                    Welcome to Modern Business
-                </h1>
+                <!--<h1 class="page-header"> -->  <!--REMOVED H1 TAG FROM HTML-->
+                    <div class="h2">Welcome to Modern Business</div> <!--ADDED H2 CLASS STYLING - PROVES THAT PAGE STRUCTURE NOT SHOWN-->
+                <!--</h1>-->
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
@@ -189,7 +189,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
                 </div>
                 <div class="col-md-4">
-                    <a id="example-cta" class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                    <a id="example-cta" class="btn btn-lg btn-default btn-block" href="#" disabled>Call to Action</a>
                 </div>
             </div>
         </div>
@@ -210,12 +210,12 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Email Address:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                            <input type="email" class="form-control" id="email" name="email"> <!--REMOVED required data-validation-required-message="Please enter your email address."-->
                         </div>
                     </div>
                     <div id="success"></div>
                     <!-- For success/fail messages -->
-                    <button type="submit" id="example-register" class="btn btn-primary">Sign Up Now!</button>
+                    <button type="submit" id="example-register" class="btn btn-primary" disabled>Sign Up Now!</button> <!--ADDED DISABLED LOGIC—>
                 </form>
             </div>
 
@@ -319,6 +319,17 @@
             }
         }
     )
+
+    // ADDING SCRIPT TO ENABLE BUTTON UPON INPUT
+    $('input[name="email"]').keyup(function(){
+    if ($(this).val())
+    {
+    $("input[name='example-register']").removeAttr('disabled');
+
+    }else{
+    $("input[name='example-register']").attr('disabled','disabled');
+    }
+    });
 
     $(function() {
         $("#signUpForm input").jqBootstrapValidation({

@@ -211,8 +211,11 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Email Address:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                            <input type="email" class="form-control" id="email">
                         </div>
+                        </div id="err" aria-labelledby="errDet" tabindex="-1"> <!--ATTEMPTING TO ADD TABINDEX AND HIDDEN ERROR MSG-->
+                            <label class="errtxt" hidden>Error:  Enter an email address in the format something@something.com</label>
+                       </div>
                     </div>
                     <div id="success"></div>
                     <!-- For success/fail messages -->

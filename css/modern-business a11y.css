@@ -23,6 +23,11 @@ body {
     opacity: 0.8;
 }
 
+/*error messages - ADDED FOR A11Y*/
+.errtxt {
+    color: red;
+}
+
 /* Home Page Carousel */
 
 header.carousel {
