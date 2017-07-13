@@ -192,7 +192,15 @@
             </div>
             <div class="col-md-6">
                 <img class="img-responsive" src="http://placehold.it/700x450" title="example of a responsive image resolution 700 by 400"> <!-- TITLE TAG ADDED -->
-            </div>
+                <div class="sr-only">
+                    <table>
+                      <summary>this table represents the graph data in the image above</caption>
+                       <tr>
+                           <td>something</td>
+                       </tr>
+                    </table>
+                </div>
+           </div>
         </div>
         <!-- /.row -->
 
@@ -205,7 +213,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
                 </div>
                 <div class="col-md-4">
-                    <a id="example-cta" class="btn btn-lg btn-default btn-block" href="#" title="select this link to execute the call to action">Call to Action</a>
+                    <button id="example-cta" class="btn btn-lg btn-default btn-block" title="select this button to execute the call to action">Call to Action</button> <!--CONVERTED TO BUTTON PROPER-->
                 </div>
             </div>
         </div>
@@ -227,7 +235,7 @@
                         <div class="controls">
                             <input type="email" class="form-control" id="email" title="enter your email address in the format something@something.com">
                         </div>
-                        </div id="err" aria-labelledby="errDet" tabindex="-1"> <!--ATTEMPTING TO ADD TABINDEX AND HIDDEN ERROR MSG-->
+                        <div id="err" aria-labelledby="errDet" tabindex="-1"> <!--ATTEMPTING TO ADD TABINDEX AND HIDDEN ERROR MSG-->
                             <label class="errtxt" hidden>Error:  Enter an email address in the format something@something.com</label>
                        </div>
                     </div>
