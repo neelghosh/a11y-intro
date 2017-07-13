@@ -9,12 +9,15 @@
 html,
 body {
     height: 100%;
-    font-family: 'Times New Roman', Times, serif /*ADDED INTO CUSTOM CODE - SERIF FONT FAMILY*/
+    font-family: serif; /*ADDED INTO CUSTOM CODE - SERIF FONT FAMILY*/
+    font-size: 0.7em /* ADDED FONT SPECIFICS FOR A11Y DEMO */
 }
 
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    font-family: 'Times New Roman', Times, serif /*ADDED INTO CUSTOM CODE - SERIF FONT FAMILY*/
+    font-family: serif; /*ADDED INTO CUSTOM CODE - SERIF FONT FAMILY*/
+    font-size: 0.7em; /* ADDED FONT SPECIFICS FOR A11Y DEMO */
+    color: #bbb; /* ADDED COLOUR CHANGE FOR A11Y */
 }
 
 .img-portfolio {

@@ -9,10 +9,23 @@
 html,
 body {
     height: 100%;
+    font-family: sans-serif; /*ADDED INTO CUSTOM CODE - SERIF FONT FAMILY*/
+    font-size: 1.0em; /* ADDED FONT SPECIFICS FOR A11Y DEMO */
 }
 
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: sans-serif; /*ADDED INTO CUSTOM CODE - SERIF FONT FAMILY*/
+    font-size: 1.0em; /* ADDED FONT SPECIFICS FOR A11Y DEMO */
+    color: #333; /* ADDED COLOUR CHANGE FOR A11Y */
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  font-family: sans-serif; /*MODIFIED TO BE SANS-SERIF - OVERRIDE OF BOOTSTRAP CLASS*/
+  line-height: 1;
 }
 
 .img-portfolio {

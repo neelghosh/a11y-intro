@@ -5,7 +5,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: serif;  /*MODIFIED TO BE SERIF*/
+  font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -105,7 +105,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: serif; /*DELETED MONOSPACE, MONOSPACE - CHANGED TO SERIF*/
+  font-family: monospace, monospace;
   font-size: 1em;
 }
 button,
@@ -1082,7 +1082,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: serif; /*MODIFIED TO BE SERIF, DELETED OTHER FONT OPTIONS (HELVETICA, ARIAL, ETC)*/
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -1531,7 +1531,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: serif; /*CHANGED TO SERIF*/
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 code {
   padding: 2px 4px;
@@ -5990,7 +5990,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: serif; /*MODIFIED TO BE SERIF, DELETED OTHER FONT OPTIONS (HELVETICA, ARIAL)*/
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: normal;
@@ -6109,7 +6109,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: serif; /*MODIFIED TO BE SERIF, DELETED OTHER FONT OPTIONS (HELVETICA, ARIAL)*/
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
@@ -6378,7 +6378,7 @@ button.close {
 .carousel-control .icon-next {
   width: 20px;
   height: 20px;
-  font-family: serif;
+  font-family: serif; 
   line-height: 1;
 }
 .carousel-control .icon-prev:before {
