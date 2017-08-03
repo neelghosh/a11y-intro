@@ -1,0 +1,52 @@
+<html lang="en" class="">
+
+<head>
+    <title>Drag and Drop Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="basic.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="<drag-and-d></drag-and-d>rop.js"></script>
+    <style id="__web-inspector-hide-shortcut-style__" type="text/css">
+        .__web-inspector-hide-shortcut__,
+        .__web-inspector-hide-shortcut__ *,
+        .__web-inspector-hidebefore-shortcut__::before,
+        .__web-inspector-hideafter-shortcut__::after {
+            visibility: hidden !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Drag and Drop Example</h1>
+    <p>Drag and drop the artists under the heading they belong. See <a href="#kbdinstructions">keyboard instructions</a>.</p>
+    <div
+        id="dragdrop" role="application">
+        <h2 id="Favh">Favourite Artists</h2>
+        <ul id="Fav" aria-labelledby="Favh" role="list" class="">
+            <li class="empty">None</li>
+        </ul>
+        <h2 id="Tolh">Tolerable Artists</h2>
+        <ul id="Tol" aria-labelledby="Tolh" role="list" class="">
+            <li class="draggable" tabindex="0" aria-grabbed="false" aria-haspopup="true" role="listitem" style="left: 0px; top: 0px; z-index: auto;">Kasabian</li>
+            <li class="draggable" tabindex="0" aria-grabbed="false" aria-haspopup="true" role="listitem" style="left: 0px; top: 0px; z-index: auto;">Reverend and the Makers</li>
+            <li class="draggable" tabindex="0" aria-grabbed="false" aria-haspopup="true" role="listitem"
+                style="left: 0px; top: 0px; z-index: auto;">XTC</li>
+        </ul>
+        <h2 id="Rejh">Rejected Artists</h2>
+        <ul id="Rej" aria-labelledby="Rejh" role="list" class="">
+            <li class="draggable" tabindex="0" aria-grabbed="false" aria-haspopup="true" role="listitem" style="left: 0px; top: 0px; z-index: auto;">Flo Rida</li>
+            <li class="draggable" tabindex="0" aria-grabbed="false" aria-haspopup="true" role="listitem" style="left: 0px; top: 0px; z-index: auto;">Babyshambles</li>
+            <li class="draggable" tabindex="0" aria-grabbed="false" aria-haspopup="true" role="listitem"
+                style="left: 0px; top: 0px; z-index: auto;">Art Brut</li>
+        </ul>
+        </div>
+        <h2 id="kbdinstructions">Keyboard Instructions</h2>
+        <ul class="instructions">
+            <li>Use the <kbd>Tab</kbd> to move to the artist you want to move.</li>
+            <li>Select the item you want to move with the <kbd>Spacebar</kbd>.</li>
+            <li>Use the <kbd>Up</kbd> and <kbd>Down</kbd> cursor keys to select a target in the context menu.</li>
+            <li>Press <kbd>Enter</kbd> to move the artist to the target list.</li>
+        </ul>
+        <p>Back to the <a href="/articles/accessible-drag-and-drop/">“Accessible drag and drop” article</a>.</p>
+</body>
+
+</html>

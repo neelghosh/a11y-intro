@@ -10,13 +10,13 @@ html,
 body {
     height: 100%;
     font-family: serif; /*ADDED INTO CUSTOM CODE - SERIF FONT FAMILY*/
-    font-size: 0.7em /* ADDED FONT SPECIFICS FOR A11Y DEMO */
+    font-size: 0.9em /* ADDED FONT SPECIFICS FOR A11Y DEMO */
 }
 
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     font-family: serif; /*ADDED INTO CUSTOM CODE - SERIF FONT FAMILY*/
-    font-size: 0.7em; /* ADDED FONT SPECIFICS FOR A11Y DEMO */
+    font-size: 0.9em; /* ADDED FONT SPECIFICS FOR A11Y DEMO */
     color: #bbb; /* ADDED COLOUR CHANGE FOR A11Y */
 }
 
